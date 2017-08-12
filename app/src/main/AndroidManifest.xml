@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <!-- label是标题，theme是主题样式 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Test" />
+        <activity android:name=".ArrayAdapterTest" />
+        <activity android:name=".Picker" />
+        <activity android:name=".SharePref" />
+        <activity android:name=".GridViewTest" />
+        <activity android:name=".SpinnerTest" />
+        <activity android:name=".ServiceTest" />
+
+        <service android:name=".ServiceTest1" />
+        <service android:name=".ServiceTest2" />
+
+        <activity android:name=".SQLiteDemo1" />
+        <activity android:name=".ProgressBarTest" />
+        <activity android:name=".WebViewTest"></activity>
+    </application>
+
+</manifest>
